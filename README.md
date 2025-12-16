@@ -1,184 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luminous Candle India | Luxury Handmade Soy Wax Candles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luminious Candle</title>
 
-  <meta name="description" content="Buy luxury handmade soy wax candles in India by Luminous Candle. Custom candles, gift hampers & festival orders available. Order via WhatsApp & Instagram." />
-  <meta name="keywords" content="handmade candles India, soy wax candles, luxury candles, scented candles gift, custom candles" />
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <meta property="og:title" content="Luminous Candle India | Luxury Handmade Soy Wax Candles" />
-  <meta property="og:description" content="Luxury handmade soy candles in India. Custom & gift candles available." />
-  <meta property="og:type" content="website" />
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #faf7f2;
+  color: #333;
+}
 
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #fdf9f6;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #3b1f0e, #8B4513);
-      color: #fff;
-      padding: 36px 16px;
-      text-align: center;
-    }
-    header h1 { margin: 0; font-size: 2.4rem; }
-    header p { margin-top: 10px; }
+header {
+  background: linear-gradient(to right, #e6d3b3, #f3eadc);
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    nav {
-      background: #A0522D;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 14px 10px;
-    }
-    nav a { color: #fff; text-decoration: none; font-weight: 600; }
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
 
-    .hero {
-      min-height: 70vh;
-      background: #3b1f0e;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      padding: 20px;
-    }
+header p {
+  font-size: 18px;
+}
 
-    .btn {
-      background: #D2691E;
-      color: #fff;
-      padding: 14px 30px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: 700;
-      display: inline-block;
-      margin: 6px;
-    }
+.buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+}
 
-    section { max-width: 1200px; margin: auto; padding: 48px 16px; }
-    section h2 { text-align: center; color: #3b1f0e; }
+.shop {
+  background: #5a3e2b;
+}
 
-    .features, .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
+.whatsapp {
+  background: #25D366;
+}
 
-    .feature, .product {
-      background: #fff;
-      padding: 24px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
+.instagram {
+  background: #C13584;
+}
 
-    .price { font-weight: bold; color: #3b1f0e; }
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-    .wa-btn {
-      background: #25D366;
-      color: #fff;
-      padding: 10px 22px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 700;
-      display: inline-block;
-      margin-top: 10px;
-    }
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    footer {
-      background: #3b1f0e;
-      color: #fff;
-      text-align: center;
-      padding: 18px;
-    }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
 
-    .float-wa {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: #fff;
-      padding: 14px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+.product {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 15px 0 5px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product a, .product button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.buy {
+  background: #5a3e2b;
+}
+
+footer {
+  background: #5a3e2b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Floating WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Luminous Candle</h1>
-  <p>Luxury Handmade Soy Wax Candles • Custom & Gift Orders Available</p>
+  <h1>Luminious Candle</h1>
+  <p>Hand-poured candles made to light your moments</p>
+
+  <div class="buttons">
+    <a href="#shop" class="shop">Shop Now</a>
+    <a href="https://wa.me/919307708258" class="whatsapp">Order on WhatsApp</a>
+    <a href="https://instagram.com/luminiouscancle09" class="instagram">DM on Instagram</a>
+  </div>
 </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#products">Shop</a>
-  <a href="#custom">Custom Orders</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="home" class="hero">
-  <div>
-    <h2>Light That Feels Like Luxury</h2>
-    <p>Premium candles for gifting, festivals & peaceful spaces.</p>
-    <a class="btn" href="#products">Shop Now</a>
-    <a class="btn" href="https://instagram.com/luminouscandle09">Instagram</a>
-  </div>
-</section>
-
-<section id="products">
-  <h2>Best Sellers</h2>
-  <div class="products">
-    <div class="product">
-      <h3>Lavender Bliss</h3>
-      <p>Relaxing floral aroma</p>
-      <div class="price">₹799</div>
-      <a class="wa-btn" href="https://wa.me/919307708258?text=I%20want%20Lavender%20Bliss">Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <h3>Vanilla Dream</h3>
-      <p>Warm cozy fragrance</p>
-      <div class="price">₹799</div>
-      <a class="wa-btn" href="https://wa.me/919307708258?text=I%20want%20Vanilla%20Dream">Order on WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<section id="custom">
-  <h2>Custom & Gift Orders</h2>
-  <div class="features">
-    <div class="feature">🎁 Wedding Return Gifts</div>
-    <div class="feature">🪔 Diwali & Festival Hampers</div>
-    <div class="feature">🕯️ Name & Fragrance Customisation</div>
-    <div class="feature">📦 Bulk Orders Accepted</div>
-  </div>
-  <p style="text-align:center;margin-top:20px;">
-    <a class="btn" href="https://wa.me/919307708258?text=I%20want%20custom%20candles">Request Custom Order</a>
+<section id="about">
+  <h2>About Us</h2>
+  <p style="text-align:center;">
+    Luminious Candle is a handcrafted candle brand created with love and care.
+    Each candle is made using quality wax, soothing fragrances, and attention to detail.
+    Our mission is to bring warmth, calm, and beauty into your everyday moments.
   </p>
 </section>
 
+<section id="shop">
+  <h2>Our Candles</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59" alt="Vanilla Bliss">
+      <h3>Vanilla Bliss</h3>
+      <p>Sweet vanilla fragrance</p>
+      <p class="price">₹499</p>
+      <a href="PASTE_RAZORPAY_LINK_HERE" class="buy">Buy Now</a>
+      <button class="whatsapp" onclick="orderWhatsApp('Vanilla Bliss')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1589987607627-616cac8d7d45" alt="Lavender Calm">
+      <h3>Lavender Calm</h3>
+      <p>Relaxing lavender scent</p>
+      <p class="price">₹549</p>
+      <a href="PASTE_RAZORPAY_LINK_HERE" class="buy">Buy Now</a>
+      <button class="whatsapp" onclick="orderWhatsApp('Lavender Calm')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1616627983796-4a3dc0c39fce" alt="Rose Elegance">
+      <h3>Rose Elegance</h3>
+      <p>Soft floral rose aroma</p>
+      <p class="price">₹599</p>
+      <a href="PASTE_RAZORPAY_LINK_HERE" class="buy">Buy Now</a>
+      <button class="whatsapp" onclick="orderWhatsApp('Rose Elegance')">Order on WhatsApp</button>
+    </div>
+
+  </div>
+</section>
+
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>Contact Us</h2>
   <p style="text-align:center;">
-    📧 luminouscandle@gmail.com<br />
-    📞 +91 93077 08258<br />
-    📍 India
+    📧 luminiouscandle@gmail.com <br>
+    📱 WhatsApp: 9307708258 <br>
+    📸 Instagram: @luminiouscancle09
   </p>
 </section>
 
 <footer>
-  © 2025 Luminous Candle • Handmade in India
+  © 2025 Luminious Candle. All rights reserved.
 </footer>
 
-<a class="float-wa" href="https://wa.me/919307708258">WhatsApp Us</a>
+<a class="whatsapp-float" href="https://wa.me/919307708258">💬</a>
+
+<script>
+function orderWhatsApp(productName) {
+  const message = `Hi, I want to order the ${productName} candle from Luminious Candle.`;
+  const url = `https://wa.me/919307708258?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
+
